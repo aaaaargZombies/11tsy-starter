@@ -5,8 +5,8 @@ import { screen } from "@testing-library/dom";
 import { ViewProps } from "../eleventy";
 
 test("renders Index component", async () => {
-  const result = jsxToString(<Index filePathStem="/index" />);
-  document.body.innerHTML = await jsxToString(result);
+  const result = await jsxToString(<Index filePathStem="/index" />);
+  document.body.innerHTML = result;
   expect(screen.getByText(`Hello /index`)).toBeTruthy();
 });
 
