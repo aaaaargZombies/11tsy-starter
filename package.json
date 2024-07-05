@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
     "start": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental",
-    "test": "vitest run"
+    "test": "vitest watch"
   },
   "type": "module",
   "keywords": [],
