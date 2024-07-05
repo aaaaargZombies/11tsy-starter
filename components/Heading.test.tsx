@@ -5,10 +5,10 @@ import { screen } from "@testing-library/dom";
 
 test("Render Heading with default name", async () => {
   document.body.innerHTML = await jsxToString(<Heading />);
-  expect(screen.getByText("Hello Component")).to.exist;
+  expect(screen.getByText("Hello World")).to.exist;
 });
 
 test("Render Heading with custom name", async () => {
-  document.body.innerHTML = await jsxToString(<Heading name={"World"} />);
-  expect(screen.getByText("Hello World")).to.exist;
+  document.body.innerHTML = await jsxToString(<Heading name={"Component"} />);
+  expect(screen.getByText("Hello Component")).to.exist;
 });
