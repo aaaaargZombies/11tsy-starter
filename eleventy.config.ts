@@ -1,6 +1,9 @@
 import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import { jsxToString } from "jsx-async-runtime";
 import { bundleJavascript } from "./src/_config/bundle-javascript";
+import { hashAssets } from "./src/_config/hash-assets";
+import * as url from "url";
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 export default function (eleventyConfig: any) {
   eleventyConfig.addPlugin(eleventySass);
@@ -25,6 +28,8 @@ export default function (eleventyConfig: any) {
     entryPoint: "./src/js/index.ts",
     ts: true,
   });
+
+  eleventyConfig.addPlugin(hashAssets, { dirname: __dirname });
 
   return {
     dir: {
