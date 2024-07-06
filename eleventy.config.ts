@@ -1,7 +1,10 @@
+import eleventySass from "@11tyrocks/eleventy-plugin-sass-lightningcss";
 import { jsxToString } from "jsx-async-runtime";
 import { bundleJavascript } from "./src/_config/bundle-javascript";
 
 export default function (eleventyConfig: any) {
+  eleventyConfig.addPlugin(eleventySass);
+
   // eleventy typescript / TSX support
   eleventyConfig.addTemplateFormats(["11ty.jsx", "11ty.ts", "11ty.tsx"]);
   eleventyConfig.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {

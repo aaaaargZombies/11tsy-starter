@@ -1,0 +1,30 @@
+.input-label-pair {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.screen-reader-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-only--focus:focus {
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+  font-weight: 600;
+  height: max-content;
+  left: 50%;
+  padding: var(--s-1);
+  position: absolute;
+  top: auto;
+  width: max-content;
+}
+
+.smol {
+  font-size: var(--step-0);
+}

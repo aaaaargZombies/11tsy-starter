@@ -1,0 +1,5 @@
+*:focus-visible {
+  outline: 10px solid var(--color-fg);
+  outline-offset: 0.25rem;
+  border-radius: 0.125rem;
+}
