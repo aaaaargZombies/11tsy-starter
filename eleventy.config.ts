@@ -13,7 +13,8 @@ export default function (eleventyConfig: any) {
   eleventyConfig.addTransform("tsx", async (content: JSX.Element) => {
     if (content && content.tag === "html") {
       const result = await jsxToString(content);
-      return `<!doctype html>\n${result}`;
+      return `<!doctype html>
+			${result}`;
     } else {
       return content;
     }
