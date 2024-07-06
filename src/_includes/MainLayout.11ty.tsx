@@ -10,6 +10,7 @@ export const MainLayout = ({ content, title }: ViewProps): JSX.Element => (
     </head>
     <Heading name={title}></Heading>
     <body>{content}</body>
+    <script src="/js/index.js"></script>
   </html>
 );
 
