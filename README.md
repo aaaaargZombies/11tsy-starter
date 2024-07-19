@@ -24,11 +24,6 @@ Although JSX is used for the templates there is no connection to react and these
 - `npm start` to start a dev server on http://localhost:5173
 - `npm run build` generate a production build in `dist/`
 
-### Formatting
-
-We recommend integrating `elm-format@0.8.3` into your code editor, but if you don't...
-- Please run `npm run format` to format `.elm` files in `src` before committing code.
-
 ### Testing
 
 - `npm test` to run vitest in watch mode
