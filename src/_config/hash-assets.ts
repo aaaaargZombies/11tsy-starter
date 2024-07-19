@@ -1,7 +1,3 @@
-// const assetHash = require("asset-hash");
-// const { Window } = require("happy-dom");
-// const fs = require("fs");
-
 import { Window } from "happy-dom";
 import * as fs from "fs";
 import { getHashedName } from "asset-hash";
