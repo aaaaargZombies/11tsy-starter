@@ -17,7 +17,7 @@ Although JSX is used for the templates there is no connection to react and these
 
 - clone this repo
 - make sure you are using the correct node version listed in `.tool-versions`
-- install with `npm install`
+- install dependencies with `npm install`
 
 ### Build
 
